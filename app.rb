@@ -1,10 +1,11 @@
-#!/usr/bin/ruby
+#!/usr/local/bin/ruby
 
 require 'json'
 require 'puma'
 require 'sinatra/activerecord'
 require 'sinatra/base'
 require 'sinatra/json'
+require "sinatra/reloader"
 require './models/book'
 
 
@@ -17,6 +18,10 @@ class BooksApp < Sinatra::Base
   configure do
     set :port, 8080
     set :bind, '0.0.0.0'
+  end
+
+  configure :development do
+    register Sinatra::Reloader
   end
 
   before do

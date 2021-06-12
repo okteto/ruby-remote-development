@@ -32,6 +32,14 @@
         <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
         <method v="2" />
       </configuration>
+      <configuration default="false" name="okteto" type="RubyRemoteDebugConfigurationType" factoryName="Ruby remote debug">
+        <RUBY_REMOTE_DEBUG_CONFIG NAME="REMOTE_HOST" VALUE="localhost" />
+        <RUBY_REMOTE_DEBUG_CONFIG NAME="PORT" VALUE="1234" />
+        <RUBY_REMOTE_DEBUG_CONFIG NAME="DISPATCHER_PORT" VALUE="26162" />
+        <RUBY_REMOTE_DEBUG_CONFIG NAME="REMOTE_ROOT" VALUE="/usr/src/app" />
+        <RUBY_REMOTE_DEBUG_CONFIG NAME="LOCAL_ROOT" VALUE="$PROJECT_DIR$" />
+        <method v="2" />
+      </configuration>
     </shared>
   </component>
   <component name="NewModuleRootManager">
@@ -50,5 +58,10 @@
     </content>
     <orderEntry type="jdk" jdkName="Remote: ruby-2.7.1-p83" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="RakeTasksCache">
+    <option name="myRootTask">
+      <RakeTaskImpl id="rake" />
+    </option>
   </component>
 </module>

@@ -5,4 +5,4 @@ COPY Gemfile Gemfile.lock /usr/src/app
 RUN bundle install
 COPY . /usr/src/app
 EXPOSE 8080
-CMD ["ruby", "app.rb"]
+CMD ["/usr/src/app/start.sh"]
