@@ -15,7 +15,7 @@ Once the application has been deployed, Okteto will show you the endpoints [in t
 
 ## Develop on your development environment
 
-Open RubyMine and load the project.  After that, open a terminal, and run `okteto up` there to activate your development environment. From now on, any command that you run on this terminal (e.g. `bundle exec rake:db migrate`) will run in your remote development environment, instead of on your local machine.
+Open RubyMine and load the project.  After that, open a terminal, and run `okteto up` there to activate your development environment. From now on, any command that you run on this terminal (e.g. `bundle exec rake db:migrate`) will run in your remote development environment, instead of on your local machine.
 
 The project is already configured to use Okteto. To start the service, all you need to do is right click on `app.rb` and select `Run: app`. 
 
